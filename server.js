@@ -1,7 +1,7 @@
 import express , {urlencoded } from 'express';
 import cors from 'cors';
 import client from './src/common/db.js';
-import peliculaRoutes from './src/pelicula/PeliculaRoutes.js'
+import peliculaRoutes from './src/pelicula/pelicula.js'
 import actorRoutes from './src/actor/actorRoutes.js'
 
 const PORTS = 3000 || 4000
