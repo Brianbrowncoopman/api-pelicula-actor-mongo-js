@@ -1,7 +1,7 @@
 import { BSONType, ObjectId }   from "mongodb";
 
 export const Actor = {
-    _id: Object,
+    _id: ObjectId,
     idPelicula: BSONType.string,
     nombre: BSONType.string,
     edad: BSONType.int,
