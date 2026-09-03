@@ -53,7 +53,7 @@ async function handleUpdatePeliculaByIdRequest(req, res) {
         let oid = ObjectId.createFromHexString(id)
         let query = { $set: pelicula }
 
-        let data = await peliculaCollection.updateOne({ _id: oid }, query) // Corregido el nombre de la colección
+        let data = await peliculaCollection.updateOne({ _id: oid }, query) 
         return res.status(200).send(data)
     } catch (error) {
         return res.status(400).send({ error: 'Id mal formado o error en actualización' })
